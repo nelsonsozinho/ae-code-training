@@ -1,5 +1,7 @@
 package br.com.shire42.nonConstructibleChange;
 
+import java.util.Arrays;
+
 public class Sort {
 
 
@@ -8,19 +10,13 @@ public class Sort {
     }
 
     private void mergesort(int array[]) {
-        int n = array.length;
+        int length = array.length;
 
-        if (n < 2) return;
+        if(length < 2) return;
 
-        int mid = n / 2;
-        int left[] = new int[mid];
-        int right[] = new int[n - mid];
-
-        for (int i = 0; i < mid; i++)
-            left[i] = array[i];
-
-        for (int i = mid; i < n; i++)
-            right[i - mid] = array[i];
+        int mid = length / 2;
+        int[] left = Arrays.copyOfRange(array, 0, mid);;
+        int[] right = Arrays.copyOfRange(array, mid, length);
 
         mergesort(left);
         mergesort(right);
@@ -28,11 +24,12 @@ public class Sort {
     }
 
     private void merge(int array[], int left[], int right[]) {
-        int nL = left.length;
-        int nR = right.length;
+        int lengthLeft = left.length;
+        int lengthRight = right.length;
+
         int i = 0, j = 0, k = 0;
 
-        while (i < nL && j < nR) {
+        while ( (i < lengthLeft) && (j < lengthRight) ) {
             if (left[i] <= right[j]) {
                 array[k] = left[i];
                 i++;
@@ -40,16 +37,17 @@ public class Sort {
                 array[k] = right[j];
                 j++;
             }
+
             k++;
         }
 
-        while (i < nL) {
+        while (i < lengthLeft) {
             array[k] = left[i];
             i++;
             k++;
         }
 
-        while (j < nR) {
+        while (j < lengthRight) {
             array[k] = right[j];
             j++;
             k++;

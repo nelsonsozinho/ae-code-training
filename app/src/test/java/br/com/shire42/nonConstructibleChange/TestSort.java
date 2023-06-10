@@ -16,14 +16,14 @@ public class TestSort {
 
     @Test
     public void testMergeSort() {
-        int[] array = new int[]{4,3,2,1};
+        int[] array = new int[]{4, 3, 2, 1};
         sort.sort(array);
         assertArrayEquals(array, new int[]{1, 2, 3, 4});
     }
 
     @Test
     public void testMergeSort2() {
-        int[] array = new int[]{2,1};
+        int[] array = new int[]{2, 1};
         sort.sort(array);
         assertArrayEquals(array, new int[]{1, 2});
     }
@@ -33,6 +33,20 @@ public class TestSort {
         int[] array = new int[]{7, 6, 5, 4, 3, 2, 1};
         sort.sort(array);
         assertArrayEquals(array, new int[]{1, 2, 3, 4, 5, 6, 7});
+    }
+
+    @Test
+    public void testMergeSort4() {
+        int[] array = new int[]{4, 3, 3, 2};
+        sort.sort(array);
+        assertArrayEquals(array, new int[]{2, 3, 3, 4});
+    }
+
+    @Test
+    public void testMergeSort5() {
+        int[] array = new int[]{5, 4, 3, 3, 2};
+        sort.sort(array);
+        assertArrayEquals(array, new int[]{2, 3, 3, 4, 5});
     }
 
 }
