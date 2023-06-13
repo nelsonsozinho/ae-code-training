@@ -1,4 +1,4 @@
-package br.com.shire42.nonConstructibleChange;
+package br.com.shire42.algo.nonConstructibleChange;
 
 import java.util.Arrays;
 

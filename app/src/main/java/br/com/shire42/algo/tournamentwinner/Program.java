@@ -1,4 +1,4 @@
-package br.com.shire42.tournamentwinner;
+package br.com.shire42.algo.tournamentwinner;
 
 import java.util.ArrayList;
 import java.util.Collections;

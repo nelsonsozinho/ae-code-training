@@ -1,5 +1,6 @@
 package br.com.shire42.sortedSquaredArray;
 
+import br.com.shire42.algo.sortedSquaredArray.Program;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class TestProgram {
 
-    private br.com.shire42.sortedSquaredArray.Program program;
+    private Program program;
 
     @BeforeEach
     public void init() {

@@ -1,7 +1,4 @@
-package br.com.shire42.nonConstructibleChange;
-
-import java.lang.reflect.Array;
-import java.util.Arrays;
+package br.com.shire42.algo.nonConstructibleChange;
 
 public class Program {
 

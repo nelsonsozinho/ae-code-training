@@ -1,4 +1,4 @@
-package br.com.shire42.validsubsequence;
+package br.com.shire42.algo.validsubsequence;
 
 import java.util.ArrayList;
 import java.util.List;

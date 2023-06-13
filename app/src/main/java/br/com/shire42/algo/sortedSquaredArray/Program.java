@@ -1,4 +1,4 @@
-package br.com.shire42.sortedSquaredArray;
+package br.com.shire42.algo.sortedSquaredArray;
 
 import java.util.Arrays;
 

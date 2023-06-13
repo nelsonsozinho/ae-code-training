@@ -1,5 +1,7 @@
 package br.com.shire42.nonConstructibleChange;
 
+import br.com.shire42.algo.nonConstructibleChange.Program;
+import br.com.shire42.algo.nonConstructibleChange.Sort;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package br.com.shire42.findClosestValueInBst;
+package br.com.shire42.algo.findClosestValueInBst;
 
 import java.util.Objects;
 
@@ -9,7 +9,7 @@ public class Program {
         return findCloseNumber(tree, target, closeNumber);
     }
 
-    static class BST {
+    public static class BST {
         public int value;
         public BST left;
         public BST right;

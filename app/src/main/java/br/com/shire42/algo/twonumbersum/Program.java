@@ -1,4 +1,4 @@
-package br.com.shire42.twonumbersum;
+package br.com.shire42.algo.twonumbersum;
 
 public class Program {
 

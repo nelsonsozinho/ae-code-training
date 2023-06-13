@@ -1,5 +1,6 @@
 package br.com.shire42.validsubsequence;
 
+import br.com.shire42.algo.validsubsequence.Program;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,5 +1,6 @@
 package br.com.shire42.tournamentwinner;
 
+import br.com.shire42.algo.tournamentwinner.Program;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
