@@ -1,4 +1,4 @@
-package br.com.shire42.findClosestValueInBst;
+package br.com.shire42.algo.findClosestValueInBst;
 
 import br.com.shire42.algo.findClosestValueInBst.Program;
 import org.junit.jupiter.api.Test;

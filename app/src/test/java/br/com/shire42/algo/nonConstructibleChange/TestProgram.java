@@ -1,4 +1,4 @@
-package br.com.shire42.nonConstructibleChange;
+package br.com.shire42.algo.nonConstructibleChange;
 
 import br.com.shire42.algo.nonConstructibleChange.Program;
 import br.com.shire42.algo.nonConstructibleChange.Sort;

@@ -1,4 +1,4 @@
-package br.com.shire42.tournamentwinner;
+package br.com.shire42.algo.tournamentwinner;
 
 import br.com.shire42.algo.tournamentwinner.Program;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,4 +1,4 @@
-package br.com.shire42.nodeDeep;
+package br.com.shire42.algo.nodeDeep;
 
 import br.com.shire42.algo.nodeDeep.Program;
 import org.junit.jupiter.api.Test;

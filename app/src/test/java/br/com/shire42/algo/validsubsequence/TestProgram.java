@@ -1,4 +1,4 @@
-package br.com.shire42.validsubsequence;
+package br.com.shire42.algo.validsubsequence;
 
 import br.com.shire42.algo.validsubsequence.Program;
 import org.junit.jupiter.api.BeforeEach;

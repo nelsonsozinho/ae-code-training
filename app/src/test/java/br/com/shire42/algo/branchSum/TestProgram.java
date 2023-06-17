@@ -1,6 +1,5 @@
-package br.com.shire42.branchSum;
+package br.com.shire42.algo.branchSum;
 
-import br.com.shire42.algo.branchSum.Program;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

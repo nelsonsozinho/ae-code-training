@@ -1,4 +1,4 @@
-package br.com.shire42.evaluateExpressionTree;
+package br.com.shire42.algo.evaluateExpressionTree;
 
 import br.com.shire42.algo.evaluateExpressionTree.Program;
 import org.junit.jupiter.api.Test;

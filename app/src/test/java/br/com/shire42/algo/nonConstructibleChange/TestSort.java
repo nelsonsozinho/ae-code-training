@@ -1,4 +1,4 @@
-package br.com.shire42.nonConstructibleChange;
+package br.com.shire42.algo.nonConstructibleChange;
 
 import br.com.shire42.algo.nonConstructibleChange.Sort;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,6 +1,4 @@
-package br.com.shire42.branchSum;
-
-import br.com.shire42.algo.branchSum.Program;
+package br.com.shire42.algo.branchSum;
 
 import java.util.ArrayList;
 import java.util.List;
