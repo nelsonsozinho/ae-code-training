@@ -25,7 +25,7 @@ public class TestLongestSubstring {
     public void testLongestText2() {
         String input = "aabbcc";
         int k = 2;
-        assertEquals(longest.findLongestSubstring(input, k), 2);
+        assertEquals(longest.findLongestSubstring(input, k), 4);
     }
 
 }

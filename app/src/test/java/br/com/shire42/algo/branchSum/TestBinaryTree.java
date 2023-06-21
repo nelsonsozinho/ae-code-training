@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TestBinaryTree extends Program.BinaryTree {
-    TestBinaryTree(int value) {
+    public TestBinaryTree(int value) {
         super(value);
     }
 
-    TestBinaryTree insert(List<Integer> values) {
+    public TestBinaryTree insert(List<Integer> values) {
         return insert(values, 0);
     }
 
