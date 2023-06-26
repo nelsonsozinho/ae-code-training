@@ -4,9 +4,15 @@ import java.util.Objects;
 
 public class Solution {
 
+    //stoped conodition
+    private final int timesCleaned = 3;
+
+
     private int column = 0;
     private int row = 0;
-    private int timesCleaned = 3;
+    private int rowLength = 0;
+
+    private int columnLength = 0;
 
     // 1 -> right
     // 2 - down
@@ -17,6 +23,8 @@ public class Solution {
     public int solution(String[] input) {
         int placesCleaned = 0;
         direction = 1;
+        rowLength = input.length;
+        columnLength = input[row].length();
 
         while (!isNeededToStop(input)) {
             if (!isObstacle(input)) {
@@ -91,9 +99,9 @@ public class Solution {
     }
 
     private void keepIntoTheBounds(String[] input) {
-        if(column >= input.length) {
+        if(column >= columnLength) {
             setupNextDirection();
-        } else if(row >= input.length) {
+        } else if(row >= rowLength) {
             setupNextDirection();
         } else if(column < 0) {
             column = 0;
@@ -106,7 +114,7 @@ public class Solution {
 
     private boolean isObstacle(String[] input) {
         //out of the edge
-        if(column >= input.length || row >= input.length) {
+        if(column >= columnLength || row >= rowLength) {
             return true;
         }
 

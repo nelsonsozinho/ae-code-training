@@ -37,4 +37,15 @@ public class TestSolution {
         assertEquals(15, result);
     }
 
+    @Test
+    public void tetThree() {
+        String[] input = new String[]{
+                "...X.",
+                ".X..X",
+                "X...X",
+                "..X.."};
+        int result = solution.solution(input);
+        assertEquals(9, result);
+    }
+
 }
