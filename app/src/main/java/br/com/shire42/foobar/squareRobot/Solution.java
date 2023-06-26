@@ -26,6 +26,13 @@ public class Solution {
         rowLength = input.length;
         columnLength = input[row].length();
 
+        //if the matrix just have one place to clean
+        //TODO it need to change to better approach
+        if(isJustOnePosition()) {
+            markAsCleaned(input);
+            return 1;
+        }
+
         while (!isNeededToStop(input)) {
             if (!isObstacle(input)) {
                 if(!isAlreadyCleaner(input))
@@ -41,6 +48,10 @@ public class Solution {
         }
 
         return placesCleaned;
+    }
+
+    private boolean isJustOnePosition() {
+        return rowLength == 1 && columnLength == 1;
     }
 
     private boolean isAlreadyCleaner(String[] input) {
@@ -86,8 +97,8 @@ public class Solution {
                 direction = 3;
             }
             case 3 -> {
-                column -= 1;
-                row += 1;
+                column += 1;
+                row -= 1;
                 direction = 4;
             }
             case 4 -> {
@@ -124,10 +135,12 @@ public class Solution {
 
     private boolean isNeededToStop(String[] input) {
         char place = input[row].charAt(column);
+
         if(Character.isDigit(place)) {
             int amountTime =  Character.getNumericValue(place);
             return amountTime >= this.timesCleaned;
         }
+
         return false;
     }
 

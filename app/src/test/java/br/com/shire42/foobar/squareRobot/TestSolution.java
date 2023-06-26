@@ -4,7 +4,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestSolution {
 
@@ -46,6 +45,13 @@ public class TestSolution {
                 "..X.."};
         int result = solution.solution(input);
         assertEquals(9, result);
+    }
+
+    @Test
+    public void tetFour() {
+        String[] input = new String[]{"."};
+        int result = solution.solution(input);
+        assertEquals(1, result);
     }
 
 }
