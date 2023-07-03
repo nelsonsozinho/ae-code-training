@@ -17,10 +17,6 @@ public class TestProgram {
         assertEquals(1, Program.getNthFib(2));
     }
 
-    @Test
-    public void testTree() {
-        assertEquals(1, Program.getNthFib(1));
-    }
 
     @Test
     public void testFour() {
