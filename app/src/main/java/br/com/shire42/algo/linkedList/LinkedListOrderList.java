@@ -1,3 +1,5 @@
+package br.com.shire42.algo.linkedList;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,10 +56,3 @@ public class LinkedListOrderList {
 }
 
 
-class Node {
-    Node next;
-    int value;
-    Node(int value) {
-        this.value = value;
-    }
-}

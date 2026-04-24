@@ -3,6 +3,8 @@ package br.com.shire42.algo.longestsubstring;
 import java.util.HashSet;
 
 //Longest substring without repeating characters
+//abcabcbb
+//abc
 public class LongestSubstring {
 
     public int lengthOfLongestSubstring(String s) {
@@ -26,7 +28,7 @@ public class LongestSubstring {
 
     public static void main(String...args) {
         LongestSubstring ls = new LongestSubstring();
-        String input = "pwwkew";
+        String input = "abcabcbb";
         int result = ls.lengthOfLongestSubstring(input);
         System.out.println(result);
     }

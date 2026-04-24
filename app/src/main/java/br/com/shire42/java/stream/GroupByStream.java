@@ -59,6 +59,16 @@ public class GroupByStream {
         System.out.println("Longest String: " + longestString);
     }
 
+    public void printCharacterFrequency() {
+        String input = "hello world";
+        Map<Character, Long> charFrequency = input.chars()
+                .mapToObj(c -> (char) c)
+                .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
+        charFrequency.forEach((key, value) -> System.out.println(key + " -> " + value));
+    }
+
+    
+
     public static void main(String...args) {
         GroupByStream gbs = new GroupByStream();
         gbs.findAUniqueNumber();
@@ -67,6 +77,7 @@ public class GroupByStream {
         gbs.findDuplicatedMembers();
         gbs.findNumbersOccurringOnce();
         gbs.findLongestString();
+        gbs.printCharacterFrequency();
     }
 
 }
